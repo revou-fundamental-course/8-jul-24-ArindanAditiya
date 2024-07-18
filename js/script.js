@@ -25,8 +25,8 @@ document.getElementById("hitungBMI").addEventListener("click", () => {
 
   console.log(status);
 
-  document.getElementById("output1").innerText = "BMI Anda: " + bmi.toFixed(1);
-  document.getElementById("beratHasil").innerText = beratBadan;
+  document.getElementById("output1").innerText = "BMI Anda Adalah: ";
+  document.getElementById("beratHasil").innerText = bmi.toFixed(1);
   document.getElementById("output2").innerText = "Status: " + status;
 
   const pesan = `Halo, saya ingin konsultasi dengan dokter mengenai hasil BMI saya. BMI saya adalah ${bmi.toFixed(1)} (${status}).`;
