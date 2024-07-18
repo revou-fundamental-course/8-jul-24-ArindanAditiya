@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../asset/background.jpg);
+  background-size: cover;
+  background-position: center;
+
+  font-family: "calibri", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.conteiner {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.row {
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  width: 460px;
+  height: 500px;
+}
+
+.content {
+  transform: translateY(20px);
+}
+
+h1 {
+  margin-bottom: 7px;
+}
+
+/* CSS untuk radio button dan label */
+.radio-group {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group input[type="radio"] + label {
+  padding: 3px 16px;
+  border-radius: 30px;
+  background-color: #ececec;
+  color: #333;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  font-weight: 600;
+}
+
+.input {
+  padding: 0 10px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.input-icon {
+  margin-bottom: 7px;
+}
+.button {
+  padding: 5px 16px;
+  border-radius: 30px;
+  background-color: #ececec;
+  color: #333;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.submit {
+  background-color: rgb(0, 0, 183);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.result {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  margin-bottom: 7px;
+}
+
+.berat-badan {
+  font-size: 5em;
+  font-weight: 800;
+}
+
+.sosmed {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px;
+  transition: background 0.3s ease;
+}
+
+.sosmed.wa {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+.sosmed.wa:hover {
+  background: linear-gradient(45deg, #128c7e, #25d366);
+}
+
+.sosmed.ig {
+  background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d, #fcaf45);
+}
+
+.sosmed.ig:hover {
+  background: linear-gradient(45deg, #fcaf45, #fd1d1d, #e1306c, #833ab4);
+}
+
+.sosmed.fb {
+  background: linear-gradient(45deg, #1877f2, #3b5998);
+}
+
+.sosmed.fb:hover {
+  background: linear-gradient(45deg, #3b5998, #1877f2);
+}
+
+.sosmed.td {
+  background: linear-gradient(45deg, #000000, #333333);
+}
+
+.sosmed.td:hover {
+  background: linear-gradient(45deg, #333333, #000000);
+}

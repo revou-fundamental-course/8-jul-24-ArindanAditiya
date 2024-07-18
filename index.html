@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <section>
+      <div class="conteiner">
+        <div class="row">
+          <div class="content">
+            <h1>KALKULATOR BMI</h1>
+            <p>Hallo sobat sehat, silahkan masukkan data anda dengan benar untuk mengetahui berapa berat anda. Perlu diingat bahwasanya anda perlu konsultasi dengan dokter.</p>
+
+            <!-- Form Pengisian -->
+            <form id="bmiForm">
+              <p>Jenis Kelamin</p>
+              <div class="radio-group"><input required type="radio" name="gender" id="Pria" /><label for="Pria">Pria</label> <input required type="radio" name="gender" id="Wanita" /><label for="Wanita">Wanita</label></div>
+              <div class="label-icin">
+                <label for="berat">Berat Badan (Kg)</label>
+                <div class="input-icon">
+                  <div class="icon"></div>
+                  <input required type="number" id="berat" class="input" />
+                </div>
+                <label for="usia">Usia</label>
+                <div class="input-icon">
+                  <div class="icon"></div>
+                  <input required type="number" id="usia" class="input" />
+                </div>
+                <label for="tinggi">Tinggi (Cm)</label>
+                <div class="input-icon">
+                  <div class="icon"></div>
+                  <input required type="number" id="tinggi" class="input" />
+                </div>
+                <div class="all-button">
+                  <button class="button submit" type="button" id="hitungBMI">Hitung BMI</button>
+                  <button class="button" type="reset">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="content">
+            <h1>HASIL</h1>
+            <div class="result">
+              <p class="output1" id="output1">-</p>
+              <p class="berat-badan" id="beratHasil">-</p>
+              <p class="output2" id="output2">-</p>
+            </div>
+            <p>Jika anda ingin konsultasi dengan dokter anda bisa menghubungi dokter langsung dari WhatsApp dengan cara klik tombol dibawah ini</p>
+            <a class="sosmed wa" href="https://wa.me/6285221978481?text=Halo%20saya%20ingin%20konsultasi%20dengan%20dokter" target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            <p>atau jika anda ingin mengunjungi media sosial kami anda bisa klik tombol yang ada dibawah ini</p>
+            <a class="sosmed ig" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a class="sosmed fb" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a class="sosmed td" href="#"><i class="fa-brands fa-threads"></i> Threads</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
